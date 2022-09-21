@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lefengpiaoling.github.io/Gallery/index.html</loc>
+    
+    <lastmod>2022-09-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lefengpiaoling.github.io/archives/833fa472.html</loc>
+    
+    <lastmod>2022-09-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/archives/c95afcba.html</loc>
     
     <lastmod>2022-09-21</lastmod>
     
@@ -20,9 +38,36 @@
   </url>
   
   <url>
-    <loc>https://lefengpiaoling.github.io/archives/c95afcba.html</loc>
+    <loc>https://lefengpiaoling.github.io/music/index.html</loc>
     
-    <lastmod>2022-09-20</lastmod>
+    <lastmod>2022-09-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/movies/index.html</loc>
+    
+    <lastmod>2022-09-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/tags/index.html</loc>
+    
+    <lastmod>2022-09-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/about/index.html</loc>
+    
+    <lastmod>2022-09-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -55,15 +100,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://lefengpiaoling.github.io/tags/index.html</loc>
-    
-    <lastmod>2022-09-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://lefengpiaoling.github.io/</loc>
@@ -73,6 +109,48 @@
   </url>
 
   
+  <url>
+    <loc>https://lefengpiaoling.github.io/tags/css%E9%80%89%E6%8B%A9%E5%99%A8/</loc>
+    <lastmod>2022-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/tags/css%E5%AD%97%E4%BD%93%E5%B1%9E%E6%80%A7/</loc>
+    <lastmod>2022-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/tags/html%E6%A0%87%E7%AD%BE/</loc>
+    <lastmod>2022-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/tags/%E8%A1%A8%E6%A0%BC/</loc>
+    <lastmod>2022-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/tags/%E8%A1%A8%E5%8D%95/</loc>
+    <lastmod>2022-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/categories/web%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2022-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
