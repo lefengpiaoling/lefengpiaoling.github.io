@@ -1,0 +1,377 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>精灵图的使用 | 乐枫的草稿箱</title><meta name="keywords" content="精灵图"><meta name="author" content="乐枫"><meta name="copyright" content="乐枫"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="目标精灵图  字体图标 css三角  常见的css用户界面样式  1.精灵图1. 1什么是精灵图 有效的减少服务器接收和发送的次数，提高页面的加载速度 。css精灵计数 css sprites核心技术将网页中的一些小的北京图像整合到一张大图中，只需呀一次请求 1.2 精灵图 sprites 的使用 主要用于背景图  移动背景图片的位置，background-position  网页中的坐标有所不同">
+<meta property="og:type" content="article">
+<meta property="og:title" content="精灵图的使用">
+<meta property="og:url" content="https://lefengpiaoling.github.io/archives/4127d095.html">
+<meta property="og:site_name" content="乐枫的草稿箱">
+<meta property="og:description" content="目标精灵图  字体图标 css三角  常见的css用户界面样式  1.精灵图1. 1什么是精灵图 有效的减少服务器接收和发送的次数，提高页面的加载速度 。css精灵计数 css sprites核心技术将网页中的一些小的北京图像整合到一张大图中，只需呀一次请求 1.2 精灵图 sprites 的使用 主要用于背景图  移动背景图片的位置，background-position  网页中的坐标有所不同">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/E7FE168D9E8B0BD48A5195BDB1CD23A3.png">
+<meta property="article:published_time" content="2022-09-22T14:41:58.000Z">
+<meta property="article:modified_time" content="2022-09-22T14:50:01.894Z">
+<meta property="article:author" content="乐枫">
+<meta property="article:tag" content="精灵图">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/E7FE168D9E8B0BD48A5195BDB1CD23A3.png"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/lefeng.jpg"><link rel="canonical" href="https://lefengpiaoling.github.io/archives/4127d095"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-1YvEIWGUMg"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4efeb503e3439e4a9188f93a94e5f120";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '精灵图的使用',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-09-22 22:50:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="css/style.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/lefeng.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/E7FE168D9E8B0BD48A5195BDB1CD23A3.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">乐枫的草稿箱</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">精灵图的使用</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-09-22T14:41:58.000Z" title="发表于 2022-09-22 22:41:58">2022-09-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-09-22T14:50:01.894Z" title="更新于 2022-09-22 22:50:01">2022-09-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="精灵图的使用"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>精灵图  字体图标 css三角  常见的css用户界面样式 </p>
+<h2 id="1-精灵图"><a href="#1-精灵图" class="headerlink" title="1.精灵图"></a>1.精灵图</h2><h3 id="1-1什么是精灵图"><a href="#1-1什么是精灵图" class="headerlink" title="1. 1什么是精灵图"></a>1. 1什么是精灵图</h3><p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210730205637.png" alt="20210730205637"></p>
+<p>有效的减少服务器接收和发送的次数，提高页面的加载速度 。css精灵计数</p>
+<p>css sprites<br><strong>核心技术</strong><br>将网页中的一些小的北京图像整合到一张大图中，只需呀一次请求<br><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210730210017.png" alt="20210730210017"></p>
+<h3 id="1-2-精灵图-sprites-的使用"><a href="#1-2-精灵图-sprites-的使用" class="headerlink" title="1.2 精灵图 sprites 的使用"></a>1.2 精灵图 sprites 的使用</h3><ol>
+<li><p>主要用于背景图</p>
+</li>
+<li><p>移动背景图片的位置，background-position</p>
+</li>
+<li><p>网页中的坐标有所不同</p>
+</li>
+</ol>
+<p>y轴越往下越大 x轴越往右越大<br>移动背景图</p>
+<ol start="4">
+<li>盒子大小和相对的位置需要测量精确</li>
+</ol>
+<h2 id="2-字体图标"><a href="#2-字体图标" class="headerlink" title="2.字体图标"></a>2.字体图标</h2><h3 id="2-1-字体图标的产生"><a href="#2-1-字体图标的产生" class="headerlink" title="2.1 字体图标的产生"></a>2.1 字体图标的产生</h3><p>精灵图的缺点 ：<br>1.文件大小<br>2. 缩小失真<br>3. 更换麻烦</p>
+<p>iconfont </p>
+<p>文字的放大缩小 不会失真</p>
+<p>展示位图标 实质位文字 </p>
+<h3 id="2-2-文字图标的优点"><a href="#2-2-文字图标的优点" class="headerlink" title="2.2 文字图标的优点"></a>2.2 文字图标的优点</h3><p>轻量级： 占地方小</p>
+<p>灵活性： 本质位文字 </p>
+<p>兼容性 好</p>
+<p>样式结构简单 没有办法 做很复杂的图标 </p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210730233449.png" alt="20210730233449"> </p>
+<h3 id="2-3-字体图标的使用"><a href="#2-3-字体图标的使用" class="headerlink" title="2.3 字体图标的使用"></a>2.3 字体图标的使用</h3><ol>
+<li>字体图标的下载 </li>
+<li>引用</li>
+<li>追加</li>
+</ol>
+<p>第一步：<br><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210730233708.png" alt="20210730233708"></p>
+<p>fonts文件 放在根目录</p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210730234403.png" alt="20210730234403"></p>
+<p>第二步：<br>引入</p>
+<p>字体声明： 赋值粘贴 style.css</p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210730235246.png" alt="20210730235246"></p>
+<p>第三步：<br>使用 复制 .html中的对应的小方框 </p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210730235335.png" alt="20210730235335"><br>粘贴到对应的位置就行<br><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210730235353.png" alt="20210730235353"></p>
+<p>然后就可以像字体一样设置文字大小颜色等格式</p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210730235441.png" alt="20210730235441"></p>
+<h3 id="2-4-字体图标追加"><a href="#2-4-字体图标追加" class="headerlink" title="2.4 字体图标追加"></a>2.4 字体图标追加</h3><p>重现上传.json文件 </p>
+<p>阿里图标的在线使用：</p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731002833.png" alt="20210731002833"></p>
+<p>再项目中 使用在线项目<br><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731002904.png" alt="20210731002904"></p>
+<p>引用.css文件时，使用该图标 注意添加http:&#x2F;&#x2F;</p>
+<h2 id="3-三角形制作"><a href="#3-三角形制作" class="headerlink" title="3.三角形制作"></a>3.三角形制作</h2><p>盒子宽高为0<br>透明的实线边框<br>三角的大小取决于border的宽度 </p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731155258.png" alt="20210731155258"></p>
+<p>案例： 京东三角 </p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731155353.png" alt="20210731155353"></p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731160153.png" alt="20210731160153"></p>
+<p>需要移动的尺寸大小： -2*border-bottom </p>
+<p>使用定位 摆放三角的位置</p>
+<h2 id="4-用户界面的样式"><a href="#4-用户界面的样式" class="headerlink" title="4.用户界面的样式"></a>4.用户界面的样式</h2><p>改变用户一些操作样式 </p>
+<p>1.更改鼠标样式<br>2.表单轮廓<br>3.防止表单拖拽</p>
+<h3 id="4-1-鼠标样式-cursor"><a href="#4-1-鼠标样式-cursor" class="headerlink" title="4.1 鼠标样式 cursor"></a>4.1 鼠标样式 cursor</h3><p>默认：<br><code>li&#123;cursor:pointer;&#125;</code><br>default： 小手<br>pointer： 小手<br>move: 移动<br>text:文本<br>not-allowed: 禁止</p>
+<p>鼠标放在li上面 变成不同的样式 </p>
+<h3 id="4-2-表单的轮廓线"><a href="#4-2-表单的轮廓线" class="headerlink" title="4.2 表单的轮廓线"></a>4.2 表单的轮廓线</h3><p>表单的轮廓线<br><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731161233.png" alt="20210731161233"><br>默认的蓝色边框去掉</p>
+<p><code>input&#123;outline: none;&#125;</code></p>
+<h3 id="4-3文本域-防止拖拽"><a href="#4-3文本域-防止拖拽" class="headerlink" title="4.3文本域 防止拖拽"></a>4.3文本域 防止拖拽</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">textarea &#123;</span><br><span class="line">    resize:none;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>不能被拖拽 变大</p>
+<h3 id="4-4-vertical-align属性应用"><a href="#4-4-vertical-align属性应用" class="headerlink" title="4.4 vertical-align属性应用"></a>4.4 vertical-align属性应用</h3><h4 id="4-4-1-文字图片垂直居中"><a href="#4-4-1-文字图片垂直居中" class="headerlink" title="4.4.1 文字图片垂直居中"></a>4.4.1 文字图片垂直居中</h4><p>用于设置图片或者表单 行内块元素 和文字垂直对齐 </p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731161958.png" alt="20210731161958"></p>
+<p>图片和文字 垂直矩阵</p>
+<p>用于设置一个行内元素或者行内块元素的垂直对齐方式</p>
+<p><strong>语法</strong>：<br><code>vertical-align:baseline </code></p>
+<p>baseline: 元素放在父元素的基线上<br>top:元素的顶端与行内最高元素的顶端对齐<br>middle: 放在父亲元素的中部<br>bottom: 把元素的顶端与行内中最低的元素的顶端对齐</p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731162344.png" alt="20210731162344"></p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731162836.png" alt="20210731162836"></p>
+<p>先转化成 行内块元素 ;然后设置 属性为 middle</p>
+<p>i一般用来放 文字图标</p>
+<h4 id="4-4-2-图片底部空白间隙解决方案"><a href="#4-4-2-图片底部空白间隙解决方案" class="headerlink" title="4.4.2 图片底部空白间隙解决方案"></a>4.4.2 图片底部空白间隙解决方案</h4><p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731163520.png" alt="20210731163520"> </p>
+<p>红圈内的缝隙的出现  </p>
+<p>文字和图片 是默认基线对齐</p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731163717.png" alt="20210731163717"> </p>
+<ol start="2">
+<li>转化成 block 元素 不存在基线对齐的方式</li>
+</ol>
+<h2 id="5-溢出文字省略号显示"><a href="#5-溢出文字省略号显示" class="headerlink" title="5. 溢出文字省略号显示"></a>5. 溢出文字省略号显示</h2><p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731163918.png" alt="20210731163918"></p>
+<h3 id="5-1-单行文本溢出"><a href="#5-1-单行文本溢出" class="headerlink" title="5.1 单行文本溢出"></a>5.1 单行文本溢出</h3><p>需满足三个条件：</p>
+<ol>
+<li>强制文字一行内显示</li>
+<li>超出的部分隐藏</li>
+<li>文字的省略部分用省略号替代</li>
+</ol>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731175215.png" alt="20210731175215"></p>
+<p>nowrap 自动换行</p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731180123.png" alt="20210731180123"></p>
+<p>溢出部分隐藏:<br>overflow:hidden</p>
+<p>text-overflow 用什么替换溢出的部分<br><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731180206.png" alt="20210731180206"></p>
+<h3 id="5-2-多行溢出-显示省略号"><a href="#5-2-多行溢出-显示省略号" class="headerlink" title="5.2 多行溢出 显示省略号"></a>5.2 多行溢出 显示省略号</h3><p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731181159.png" alt="20210731181159"></p>
+<p>后端控制 </p>
+<h2 id="6-布局技巧"><a href="#6-布局技巧" class="headerlink" title="6 布局技巧"></a>6 布局技巧</h2><h3 id="6-1-margin-负值应用"><a href="#6-1-margin-负值应用" class="headerlink" title="6.1 margin 负值应用"></a>6.1 margin 负值应用</h3><p>margin-lext :-1px</p>
+<p>定位： 鼠标放上去 盒子的边框变成橙色</p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731185342.png" alt="20210731185342"></p>
+<p>都有定位时，采用z-index </p>
+<p>li 记得必选有 position-relative</p>
+<h3 id="6-2-文字围绕浮动元素"><a href="#6-2-文字围绕浮动元素" class="headerlink" title="6.2 文字围绕浮动元素"></a>6.2 文字围绕浮动元素</h3><p>盒子 浮动 不会压住文字</p>
+<h3 id="6-3-行内块元素的应用"><a href="#6-3-行内块元素的应用" class="headerlink" title="6.3 行内块元素的应用"></a>6.3 行内块元素的应用</h3><p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731224655.png" alt="20210731224655"></p>
+<h3 id="6-4-css三角应用"><a href="#6-4-css三角应用" class="headerlink" title="6.4 css三角应用"></a>6.4 css三角应用</h3><p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731224743.png" alt="20210731224743"></p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731231628.png" alt="20210731231628"></p>
+<h2 id="7-css初始化"><a href="#7-css初始化" class="headerlink" title="7.css初始化"></a>7.css初始化</h2><p>利用css 对浏览器的值初始化 </p>
+<p><img src="https://xd-imgsubmit.oss-cn-beijing.aliyuncs.com/images/20210731232156.png" alt="20210731232156"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://lefengpiaoling.github.io">乐枫</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://lefengpiaoling.github.io/archives/4127d095.html">https://lefengpiaoling.github.io/archives/4127d095.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://lefengpiaoling.github.io" target="_blank">乐枫的草稿箱</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%B2%BE%E7%81%B5%E5%9B%BE/">精灵图</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/E7FE168D9E8B0BD48A5195BDB1CD23A3.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/6aa61ea6d32d2975dae713ad7ed3772.jpg" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/6aa61ea6d32d2975dae713ad7ed3772.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/82e33a79989ff81c5850cd2e764ae9a.jpg" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/82e33a79989ff81c5850cd2e764ae9a.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/archives/1f0949c1.html"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/E3941F19A5AEC7F49D41F23D487B34EC.gif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">HTML5新特性</div></div></a></div><div class="next-post pull-right"><a href="/archives/1fe6fd40.html"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/198057F7287C59C345CDAA6528D31A70.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">css定位保姆级讲解</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NzMwNi8zMzc3MA=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/lefeng.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">乐枫</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/lefengpiaoling"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/lefengpiaoling" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://blog.csdn.net/qq_45985929?type=blog" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fa fa-book-open"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2674604735&amp;site=qq&amp;menu=yes" rel="external nofollow noreferrer" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:2674604735@qq.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87"><span class="toc-number">1.</span> <span class="toc-text">目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%B2%BE%E7%81%B5%E5%9B%BE"><span class="toc-number">2.</span> <span class="toc-text">1.精灵图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E4%BB%80%E4%B9%88%E6%98%AF%E7%B2%BE%E7%81%B5%E5%9B%BE"><span class="toc-number">2.1.</span> <span class="toc-text">1. 1什么是精灵图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E7%B2%BE%E7%81%B5%E5%9B%BE-sprites-%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">2.2.</span> <span class="toc-text">1.2 精灵图 sprites 的使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87"><span class="toc-number">3.</span> <span class="toc-text">2.字体图标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BA%A7%E7%94%9F"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 字体图标的产生</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%96%87%E5%AD%97%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 文字图标的优点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">3.3.</span> <span class="toc-text">2.3 字体图标的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E5%AD%97%E4%BD%93%E5%9B%BE%E6%A0%87%E8%BF%BD%E5%8A%A0"><span class="toc-number">3.4.</span> <span class="toc-text">2.4 字体图标追加</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%B8%89%E8%A7%92%E5%BD%A2%E5%88%B6%E4%BD%9C"><span class="toc-number">4.</span> <span class="toc-text">3.三角形制作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2%E7%9A%84%E6%A0%B7%E5%BC%8F"><span class="toc-number">5.</span> <span class="toc-text">4.用户界面的样式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E9%BC%A0%E6%A0%87%E6%A0%B7%E5%BC%8F-cursor"><span class="toc-number">5.1.</span> <span class="toc-text">4.1 鼠标样式 cursor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E8%A1%A8%E5%8D%95%E7%9A%84%E8%BD%AE%E5%BB%93%E7%BA%BF"><span class="toc-number">5.2.</span> <span class="toc-text">4.2 表单的轮廓线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3%E6%96%87%E6%9C%AC%E5%9F%9F-%E9%98%B2%E6%AD%A2%E6%8B%96%E6%8B%BD"><span class="toc-number">5.3.</span> <span class="toc-text">4.3文本域 防止拖拽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-vertical-align%E5%B1%9E%E6%80%A7%E5%BA%94%E7%94%A8"><span class="toc-number">5.4.</span> <span class="toc-text">4.4 vertical-align属性应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-1-%E6%96%87%E5%AD%97%E5%9B%BE%E7%89%87%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD"><span class="toc-number">5.4.1.</span> <span class="toc-text">4.4.1 文字图片垂直居中</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-4-2-%E5%9B%BE%E7%89%87%E5%BA%95%E9%83%A8%E7%A9%BA%E7%99%BD%E9%97%B4%E9%9A%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">5.4.2.</span> <span class="toc-text">4.4.2 图片底部空白间隙解决方案</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%BA%A2%E5%87%BA%E6%96%87%E5%AD%97%E7%9C%81%E7%95%A5%E5%8F%B7%E6%98%BE%E7%A4%BA"><span class="toc-number">6.</span> <span class="toc-text">5. 溢出文字省略号显示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E5%8D%95%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA"><span class="toc-number">6.1.</span> <span class="toc-text">5.1 单行文本溢出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E5%A4%9A%E8%A1%8C%E6%BA%A2%E5%87%BA-%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7"><span class="toc-number">6.2.</span> <span class="toc-text">5.2 多行溢出 显示省略号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7"><span class="toc-number">7.</span> <span class="toc-text">6 布局技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-margin-%E8%B4%9F%E5%80%BC%E5%BA%94%E7%94%A8"><span class="toc-number">7.1.</span> <span class="toc-text">6.1 margin 负值应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E6%96%87%E5%AD%97%E5%9B%B4%E7%BB%95%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0"><span class="toc-number">7.2.</span> <span class="toc-text">6.2 文字围绕浮动元素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E8%A1%8C%E5%86%85%E5%9D%97%E5%85%83%E7%B4%A0%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-number">7.3.</span> <span class="toc-text">6.3 行内块元素的应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4-css%E4%B8%89%E8%A7%92%E5%BA%94%E7%94%A8"><span class="toc-number">7.4.</span> <span class="toc-text">6.4 css三角应用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-css%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">8.</span> <span class="toc-text">7.css初始化</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/archives/94e4f6ac.html" title="css之transform总结"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/198057F7287C59C345CDAA6528D31A70.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css之transform总结"/></a><div class="content"><a class="title" href="/archives/94e4f6ac.html" title="css之transform总结">css之transform总结</a><time datetime="2022-09-22T14:47:32.000Z" title="发表于 2022-09-22 22:47:32">2022-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/1f0949c1.html" title="HTML5新特性"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/E3941F19A5AEC7F49D41F23D487B34EC.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML5新特性"/></a><div class="content"><a class="title" href="/archives/1f0949c1.html" title="HTML5新特性">HTML5新特性</a><time datetime="2022-09-22T14:43:55.000Z" title="发表于 2022-09-22 22:43:55">2022-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/4127d095.html" title="精灵图的使用"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/E7FE168D9E8B0BD48A5195BDB1CD23A3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="精灵图的使用"/></a><div class="content"><a class="title" href="/archives/4127d095.html" title="精灵图的使用">精灵图的使用</a><time datetime="2022-09-22T14:41:58.000Z" title="发表于 2022-09-22 22:41:58">2022-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/1fe6fd40.html" title="css定位保姆级讲解"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/198057F7287C59C345CDAA6528D31A70.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css定位保姆级讲解"/></a><div class="content"><a class="title" href="/archives/1fe6fd40.html" title="css定位保姆级讲解">css定位保姆级讲解</a><time datetime="2022-09-22T14:38:32.000Z" title="发表于 2022-09-22 22:38:32">2022-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/8a3bcebf.html" title="盒子模型边框和浮动的总结"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/198057F7287C59C345CDAA6528D31A70.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="盒子模型边框和浮动的总结"/></a><div class="content"><a class="title" href="/archives/8a3bcebf.html" title="盒子模型边框和浮动的总结">盒子模型边框和浮动的总结</a><time datetime="2022-09-22T14:33:59.000Z" title="发表于 2022-09-22 22:33:59">2022-09-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2022 By 乐枫</div><div class="footer_custom_text">我相信我可以，但我一直在路上，所以我有无限的可能！！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":145,"height":315},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body></html>
