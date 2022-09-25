@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>前端VSCode常用插件安装和使用 | 乐枫的草稿箱</title><meta name="author" content="乐枫"><meta name="copyright" content="乐枫"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="本篇文章先介绍下常见的插件~~~~ VSCode常用的插件vscode之所以被称为宇宙第一神器，其中丰富的插件功不可没，安装起来超级简单，给我们开发带来了极大的便捷。 注意，新手学习期间，不建议安装形形色色的插件，用到啥就安装啥。因为有些插件会到vue学习的时候引起冲突，所以这里介绍几个常用的插件。  Chinese (Simplified)  汉化  Auto Rename Tag  One D">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端VSCode常用插件安装和使用">
+<meta property="og:url" content="https://lefengpiaoling.github.io/archives/51e3eac.html">
+<meta property="og:site_name" content="乐枫的草稿箱">
+<meta property="og:description" content="本篇文章先介绍下常见的插件~~~~ VSCode常用的插件vscode之所以被称为宇宙第一神器，其中丰富的插件功不可没，安装起来超级简单，给我们开发带来了极大的便捷。 注意，新手学习期间，不建议安装形形色色的插件，用到啥就安装啥。因为有些插件会到vue学习的时候引起冲突，所以这里介绍几个常用的插件。  Chinese (Simplified)  汉化  Auto Rename Tag  One D">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/723F26610C033A078E7241D31801208B.gif">
+<meta property="article:published_time" content="2022-09-25T03:57:15.000Z">
+<meta property="article:modified_time" content="2022-09-25T08:59:11.641Z">
+<meta property="article:author" content="乐枫">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/723F26610C033A078E7241D31801208B.gif"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/lefeng.jpg"><link rel="canonical" href="https://lefengpiaoling.github.io/archives/51e3eac"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-1YvEIWGUMg"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4efeb503e3439e4a9188f93a94e5f120";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '前端VSCode常用插件安装和使用',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-09-25 16:59:11'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="css/style.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/lefeng.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/723F26610C033A078E7241D31801208B.gif')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">乐枫的草稿箱</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">前端VSCode常用插件安装和使用</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-09-25T03:57:15.000Z" title="发表于 2022-09-25 11:57:15">2022-09-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-09-25T08:59:11.641Z" title="更新于 2022-09-25 16:59:11">2022-09-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">876</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="前端VSCode常用插件安装和使用"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>本篇文章先介绍下常见的插件~~~~</strong></p>
+<h1 id="VSCode常用的插件"><a href="#VSCode常用的插件" class="headerlink" title="VSCode常用的插件"></a>VSCode常用的插件</h1><p><code>vscode之所以被称为宇宙第一神器，其中丰富的插件功不可没，安装起来超级简单，给我们开发带来了极大的便捷。 注意，新手学习期间，不建议安装形形色色的插件，用到啥就安装啥。因为有些插件会到vue学习的时候引起冲突，所以这里介绍几个常用的插件。</code></p>
+<ul>
+<li><p>Chinese (Simplified)  汉化</p>
+</li>
+<li><p>Auto Rename Tag</p>
+</li>
+<li><p>One Dark Pro   颜色主题</p>
+</li>
+<li><p>格式化代码（vscode系统自带）</p>
+</li>
+<li><p>open in browser   浏览器预览页面</p>
+</li>
+<li><p>Live Server   实时预览（推荐）</p>
+</li>
+<li><p>vscode-icons   设置文件图标主题</p>
+</li>
+<li><p>Easy LESS   编译less文件</p>
+</li>
+<li><p>会了吧   学习单词插件 （可以使用）</p>
+</li>
+</ul>
+<h3 id="1-Chinese-Simplified"><a href="#1-Chinese-Simplified" class="headerlink" title="1. Chinese (Simplified)"></a>1. Chinese (Simplified)</h3><p>vscode下载完毕是英文版的，先安装这个插件，改为中文版，所以是我们第一个安装的插件。<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/vscode-chinese.png" alt="中文插件chinese"></p>
+<h3 id="2-Auto-Rename-Tag"><a href="#2-Auto-Rename-Tag" class="headerlink" title="2. Auto Rename Tag"></a>2. Auto Rename Tag</h3><p>修改开始标签，结束标签跟着自动变化，比较好用。<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/vscode-autotag.png" alt="auto rename tag"></p>
+<h3 id="3-One-Dark-Pro-颜色主题"><a href="#3-One-Dark-Pro-颜色主题" class="headerlink" title="3. One Dark Pro   颜色主题"></a>3. One Dark Pro   颜色主题</h3><p>我比较喜欢的一个颜色主题<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/vscode-one.png"></p>
+<p>页面的效果：<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/one-effect.png"></p>
+<h3 id="4-格式化代码（vscode系统自带）"><a href="#4-格式化代码（vscode系统自带）" class="headerlink" title="4. 格式化代码（vscode系统自带）"></a>4. 格式化代码（vscode系统自带）</h3><p>现在格式化代码的插件非常多，比如Prettier等等。 </p>
+<p><font color="red">刚开始学，不太建议安装插件，先自己手写规范的语法格式</font></p>
+<p>但是html标签嵌套比较多，可能需要自动格式化比较好，所以我们可以利用vscode自动的功能格式化代码，<font color="blue">暂且不用格式化插件，自动保存照样能格式化代码。</font>&gt;</p>
+<p>（1） 点击管理按钮—选择里面的设置命令<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/vscode-gs.png" alt="vscode自动格式化代码"><br>vscode 管理–设置<br>（2）选择用户 —&gt;  文本编辑器  —&gt;  正在格式化  —&gt;  勾选如下图的2个按钮<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/vscode-gs2.png" alt="vscode自动格式化代码"></p>
+<p>这样，我们不用安装插件，就可以自动保存自动格式化代码了。</p>
+<h3 id="5-open-in-browser-浏览器预览页面"><a href="#5-open-in-browser-浏览器预览页面" class="headerlink" title="5. open in browser   浏览器预览页面"></a>5. open in browser   浏览器预览页面</h3><p>编写完代码，需要浏览器预览，可以安装这个插件<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/vscode-open.png"><br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/vscode-open2.png" alt="浏览器预览页面"></p>
+<p>vscode 浏览器打开页面</p>
+<h3 id="6-Live-Server-实时预览（推荐）"><a href="#6-Live-Server-实时预览（推荐）" class="headerlink" title="6. Live Server   实时预览（推荐）"></a>6. Live Server   实时预览（推荐）</h3><p>刚才的插件是可以预览我们的页面，但是改完代码，浏览器必须要重新刷新，比较麻烦，因此推荐各位小伙伴安装 live server 这个插件，修改完代码，自动更新浏览器，爽歪歪~~~<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/vscode-live.png"><br>live server 自动更新页面<br>小技巧：</p>
+<p>刚开始学习前端，基本页面很少，可以左边编辑器，右边浏览器，这样编写完毕代码，保存完毕后，浏览器自动更新了。<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/live2.png"><br>小技巧<br>注意点：</p>
+<p>使用live server 各位小伙伴要注意， 先用vscode 打开 文件所在的目录文件夹哦。<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/c9d0f4686a0fdd5cdc90c0330682e21f965c4274.png@942w_533h_progressive.webp"></p>
+<h3 id="7-vscode-icons-设置文件图标主题"><a href="#7-vscode-icons-设置文件图标主题" class="headerlink" title="7. vscode-icons   设置文件图标主题"></a>7. vscode-icons   设置文件图标主题</h3><p>可以很清楚看到文件对用的图标。<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/082202d66f4a816aa0d5c54c07429a044f37ddf9.png"></p>
+<p>只是为了看文件更加直观哈<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/9db5c682ee70e882949c6be33996b569fbcad523.png"></p>
+<h3 id="8-Easy-LESS-编译less文件"><a href="#8-Easy-LESS-编译less文件" class="headerlink" title="8. Easy LESS   编译less文件"></a>8. Easy LESS   编译less文件</h3><p>我们写的less不能直接引入到html文件中， 通过这个插件可以自动帮我们生成 css文件<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/af1827d7d9ebb7daf90b1b24e3aefe3d9bf3aab7.png"></p>
+<h3 id="9-会了吧"><a href="#9-会了吧" class="headerlink" title="9. 会了吧"></a>9. 会了吧</h3><p>是的，你没看错，这个插件的名字就是 《会了吧》</p>
+<p>你是不是还在为英文单词不认识而发愁，是不是认识不会读而烦心， 这个插件你值得拥有。<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/a38d9d4cbe9156e3c06b899ad283eaf437f04cba.png"></p>
+<p>里面会有单词介绍，点击还会有发音，喜欢吧。<br><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/f10fa8139a4e1440aa0b027826227af9986b59ca.png"><br>会了吧插件<br>好的，这篇文章，先介绍到这里， 学到vue的同学肯定就安装vetur、eslint 等插件了，下章节将讲解vscode快捷键的使用。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://lefengpiaoling.github.io">乐枫</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://lefengpiaoling.github.io/archives/51e3eac.html">https://lefengpiaoling.github.io/archives/51e3eac.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://lefengpiaoling.github.io" target="_blank">乐枫的草稿箱</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/723F26610C033A078E7241D31801208B.gif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/6aa61ea6d32d2975dae713ad7ed3772.jpg" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/6aa61ea6d32d2975dae713ad7ed3772.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/82e33a79989ff81c5850cd2e764ae9a.jpg" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/82e33a79989ff81c5850cd2e764ae9a.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/archives/94e4f6ac.html"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/198057F7287C59C345CDAA6528D31A70.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">css之transform总结</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NzMwNi8zMzc3MA=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/lefeng.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">乐枫</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/lefengpiaoling"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/lefengpiaoling" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://blog.csdn.net/qq_45985929?type=blog" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fa fa-book-open"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=2674604735&amp;site=qq&amp;menu=yes" rel="external nofollow noreferrer" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="mailto:2674604735@qq.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#VSCode%E5%B8%B8%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">VSCode常用的插件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Chinese-Simplified"><span class="toc-number">1.0.1.</span> <span class="toc-text">1. Chinese (Simplified)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Auto-Rename-Tag"><span class="toc-number">1.0.2.</span> <span class="toc-text">2. Auto Rename Tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-One-Dark-Pro-%E9%A2%9C%E8%89%B2%E4%B8%BB%E9%A2%98"><span class="toc-number">1.0.3.</span> <span class="toc-text">3. One Dark Pro   颜色主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81%EF%BC%88vscode%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%EF%BC%89"><span class="toc-number">1.0.4.</span> <span class="toc-text">4. 格式化代码（vscode系统自带）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-open-in-browser-%E6%B5%8F%E8%A7%88%E5%99%A8%E9%A2%84%E8%A7%88%E9%A1%B5%E9%9D%A2"><span class="toc-number">1.0.5.</span> <span class="toc-text">5. open in browser   浏览器预览页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-Live-Server-%E5%AE%9E%E6%97%B6%E9%A2%84%E8%A7%88%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.0.6.</span> <span class="toc-text">6. Live Server   实时预览（推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-vscode-icons-%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E5%9B%BE%E6%A0%87%E4%B8%BB%E9%A2%98"><span class="toc-number">1.0.7.</span> <span class="toc-text">7. vscode-icons   设置文件图标主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-Easy-LESS-%E7%BC%96%E8%AF%91less%E6%96%87%E4%BB%B6"><span class="toc-number">1.0.8.</span> <span class="toc-text">8. Easy LESS   编译less文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E4%BC%9A%E4%BA%86%E5%90%A7"><span class="toc-number">1.0.9.</span> <span class="toc-text">9. 会了吧</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/archives/51e3eac.html" title="前端VSCode常用插件安装和使用"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/723F26610C033A078E7241D31801208B.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端VSCode常用插件安装和使用"/></a><div class="content"><a class="title" href="/archives/51e3eac.html" title="前端VSCode常用插件安装和使用">前端VSCode常用插件安装和使用</a><time datetime="2022-09-25T03:57:15.000Z" title="发表于 2022-09-25 11:57:15">2022-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/94e4f6ac.html" title="css之transform总结"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/198057F7287C59C345CDAA6528D31A70.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css之transform总结"/></a><div class="content"><a class="title" href="/archives/94e4f6ac.html" title="css之transform总结">css之transform总结</a><time datetime="2022-09-22T14:47:32.000Z" title="发表于 2022-09-22 22:47:32">2022-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/1f0949c1.html" title="HTML5新特性"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/E3941F19A5AEC7F49D41F23D487B34EC.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HTML5新特性"/></a><div class="content"><a class="title" href="/archives/1f0949c1.html" title="HTML5新特性">HTML5新特性</a><time datetime="2022-09-22T14:43:55.000Z" title="发表于 2022-09-22 22:43:55">2022-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/4127d095.html" title="精灵图的使用"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/E7FE168D9E8B0BD48A5195BDB1CD23A3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="精灵图的使用"/></a><div class="content"><a class="title" href="/archives/4127d095.html" title="精灵图的使用">精灵图的使用</a><time datetime="2022-09-22T14:41:58.000Z" title="发表于 2022-09-22 22:41:58">2022-09-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/archives/1fe6fd40.html" title="css定位保姆级讲解"><img src="https://cdn.jsdelivr.net/gh/lefengpiaoling/piclefeng/img/198057F7287C59C345CDAA6528D31A70.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="css定位保姆级讲解"/></a><div class="content"><a class="title" href="/archives/1fe6fd40.html" title="css定位保姆级讲解">css定位保姆级讲解</a><time datetime="2022-09-22T14:38:32.000Z" title="发表于 2022-09-22 22:38:32">2022-09-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2016 - 2022 By 乐枫</div><div class="footer_custom_text">我相信我可以，但我一直在路上，所以我有无限的可能！！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !true) {
+  if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":145,"height":315},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.8},"log":false});</script></body></html>
