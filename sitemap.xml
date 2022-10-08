@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lefengpiaoling.github.io/archives/1a6a5ebf.html</loc>
+    
+    <lastmod>2022-10-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://lefengpiaoling.github.io/archives/51e3eac.html</loc>
     
     <lastmod>2022-10-08</lastmod>
@@ -244,6 +253,13 @@
   
   <url>
     <loc>https://lefengpiaoling.github.io/tags/%E7%B2%BE%E7%81%B5%E5%9B%BE/</loc>
+    <lastmod>2022-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://lefengpiaoling.github.io/tags/JavaScript/</loc>
     <lastmod>2022-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
